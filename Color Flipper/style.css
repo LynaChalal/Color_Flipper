@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+}
+
+nav{
+    background-color: white;
+    height: 4.5vw; /* vw stands for "viewport width," and it's a relative unit that's based on a percentage of the viewport's width (1vw represents 1% of that width) */
+}
+
+.nav-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-center h4{
+    margin-right:20%;
+    font-size: 2vw;
+    color: rgb(65, 185, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li {
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    margin: 10%;
+}
+
+.nav-links a:hover {
+    color: rgb(65, 185, 240);
+}
+
+main{
+    background-color: #F1f5f8;
+    min-height:calc(100vh - 4.5vw);/* it's a CSS function that allows you to perform calculations to determine a property value. In this case, it's being used to subtract 3rem (nav height) from 100vh (100% of viewport height) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2{
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    padding: 8%;
+    text-align: center;
+    border-radius: 10%; 
+    display: inline-block; /* By setting display: inline-block;, you make the h2 element behave like an inline-level element (like text) but retain block-level properties, such as the ability to have a background color that spans across a single line */
+}
+
+button{
+    background-color: transparent;
+    border: 2px black solid;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top:4% ;
+    padding-bottom:4% ;
+    display: block;
+    margin: 2vw auto;
+    border-radius: 10%;
+    font-size: 2vw;
+    font-weight: bold;
+}
